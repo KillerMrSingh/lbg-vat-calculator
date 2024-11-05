@@ -4,7 +4,7 @@ pipeline {
 	stages {
 		stage('Checkout'){
 			steps {
-				git branch: 'main', url: 'https://github.com/QA-Instructor/lbg-vat-calculator.git'
+				git branch: 'main', url: 'https://github.com/KillerMrSingh/lbg-vat-calculator/'
 			}
 		}
 		stage('SonarQube Analysis'){
