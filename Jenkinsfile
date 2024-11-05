@@ -12,7 +12,7 @@ pipeline {
                 scannerHome = tool 'sonarqube'
             }
             steps {
-                withSonarQubeEnv('MySonarQubeServer') {  // Replace with your actual SonarQube configuration name
+                withSonarQubeEnv('SQ-Jenkins-Test') {  // Replace with your actual SonarQube configuration name
                     withCredentials([string(credentialsId: 'sonar-auth-token', variable: 'sqa_08d0210bbb64910b4984732e9586db96df844d08')]) {
                         sh """
                         ${scannerHome}/bin/sonar-scanner \
