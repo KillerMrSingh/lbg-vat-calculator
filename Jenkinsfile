@@ -7,7 +7,7 @@ pipeline {
 				git branch: 'main', url: 'https://github.com/KillerMrSingh/lbg-vat-calculator/'
 			}
 		}
-		stage('SonarQube Analysis'){
+		stage('jenkins-sonarqube-test-job'){
 			environment {
 				scannerHome = tool 'sonarqube'
 			}
