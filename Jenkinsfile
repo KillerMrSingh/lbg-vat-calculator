@@ -4,7 +4,7 @@ pipeline {
 	stages {
 		stage('Checkout'){
 			steps {
-				git branch: 'main', url: 'https://github.com/KillerMrSingh/lbg-vat-calculator/'
+				git branch: 'main', url: 'https://github.com/KillerMrSingh/lbg-vat-calculator.git'
 			}
 		}
 		stage('SQ-Jenkins-Test'){
